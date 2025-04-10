@@ -1,0 +1,17 @@
+[
+  {
+    "name": "marthos1",
+    "type": "code",
+    "details": "Added /donate API route and dashboard chart UI",
+    "wallet": "0x1234...",
+    "rewarded": true,
+    "nftId": 1
+  },
+  {
+    "name": "jane-dev",
+    "type": "docs",
+    "details": "Wrote community-guide.md and translated API docs",
+    "wallet": null,
+    "rewarded": false
+  }
+]
