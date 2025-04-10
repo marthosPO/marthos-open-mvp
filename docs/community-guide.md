@@ -39,3 +39,83 @@ Contributors can participate in the following ways.
 1. Fork GitHub Repo & Submit PR
 2. Join Slack channel: [Link to be shared]
 3. Join Open Chat: https://open.kakao.com/o/gtxxxxx
+
+// 📄 docs/community-guide.md
+/*
+# 🌍 MARTHOS Open MVP Community Guide
+
+This guide outlines the operating philosophy and reward structure for the MARTHOS Open MVP project.
+
+---
+
+## 🤝 Community Philosophy
+
+MARTHOS believes that **every contribution has value**, and that
+**participation should be remembered, rewarded, and respected**.
+
+This project is built on the principles of:
+
+- **Transparency**: All contributions are visible and verifiable on-chain.
+- **Decentralization**: We are building toward a DAO where governance is shared.
+- **Recognition**: Contributions are rewarded with NFTs and public acknowledgment.
+
+---
+
+## 🏆 Contributor Rewards
+
+All contributors will receive **ERC-721 NFTs** that verify their role and participation.
+
+### 🎖 NFT Tiers
+| Tier | Description |
+|------|-------------|
+| 🌱 Supporter | First-time contributor (docs, issues, ideas) |
+| 🔧 Developer | Code contributions via PRs |
+| 🧠 Architect | Core contributor to architecture or system design |
+| 🛡 Maintainer | Reviewer & system maintainer |
+
+---
+
+## 📋 Contribution Types
+
+- Code (Frontend, Backend, Smart Contracts)
+- Documentation (README, API Docs)
+- Design (UI/UX mockups)
+- Testing & Bug Reports
+- Community Moderation & Feedback
+
+All types of contribution are welcome and tracked for NFT issuance.
+
+---
+
+## ⛓ On-Chain Records
+
+- All data donations and NFT issuance will be recorded on **Polygon Mumbai** testnet initially.
+- Future mainnet migration planned with contributor voting.
+
+---
+
+## 🗳 DAO Vision
+
+The long-term goal is to evolve MARTHOS into a DAO:
+
+- **Snapshot-based voting system**
+- **Reputation system based on contribution history**
+- **Community treasury management**
+
+Contributors will hold governance tokens (or NFTs) with voting rights.
+
+---
+
+## 🧭 How to Start
+
+1. Fork our repo: https://github.com/marthosPO/marthos-open-mvp
+2. Submit PRs or file Issues
+3. Join our open chat: [Open Kakao / Slack links here]
+4. Share your wallet address to receive your Contributor NFT
+
+---
+
+We welcome everyone who wants to make public technology better, together.
+
+Let’s build MARTHOS with transparency, respect, and purpose. 💙
+*/
