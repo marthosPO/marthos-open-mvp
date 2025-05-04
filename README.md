@@ -160,3 +160,24 @@ Join us. 🌍
 📄 Community Governance, NFT, DAO & Contribution Info → [docs/community-guide.md](./docs/community-guide.md)
 📡 API 명세 (EN): [docs/API_SPEC_EN.md](./docs/API_SPEC_EN.md)
 🧪 MVP 채팅 시나리오 → [docs/demo-flow.md](./docs/demo-flow.md)
+
+## 🐍 Run with Python (Local)
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run the backend server
+uvicorn app.main:app --reload
+
+🐳 Run with Docker
+bash
+# 1. Build image
+docker build -t marthos-open-mvp .
+
+# 2. Run container
+docker run -d -p 8000:8000 marthos-open-mvp
+Open http://localhost:8000 to test!
+
+
+
