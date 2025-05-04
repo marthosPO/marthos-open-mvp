@@ -1,0 +1,73 @@
+✅ 기본형 (FastAPI 백엔드만 있는 구조)docker-compose.yml
+yaml
+복사
+편집
+version: '3.8'
+
+services:
+  backend:
+    container_name: marthos-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - PYTHONUNBUFFERED=1
+📁 파일 구성 예시 (최소 작동 구조)
+arduino
+복사
+편집
+marthos-open-mvp/
+├── app/
+│   └── main.py
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml  ✅ 지금 만든 이 파일
+📌 함께 쓰는 예시 (위와 연동됨)Dockerfile
+dockerfile
+복사
+편집
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+🧪 실행법
+bash
+복사
+편집
+# 한 줄로 실행
+docker-compose up --build
+
+# 중지
+docker-compose down
+🌱 확장 구조 (추후용 예시)
+yaml
+복사
+편집
+services:
+  backend:
+    ...
+  frontend:
+    ...
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=marthos
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=secure
+    ports:
+      - "5432:5432"
