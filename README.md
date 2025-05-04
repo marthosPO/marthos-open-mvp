@@ -161,23 +161,52 @@ Join us. 🌍
 📡 API 명세 (EN): [docs/API_SPEC_EN.md](./docs/API_SPEC_EN.md)
 🧪 MVP 채팅 시나리오 → [docs/demo-flow.md](./docs/demo-flow.md)
 
-## 🐍 Run with Python (Local)
+## 🚀 How to Run This Project
+
+This project runs on **FastAPI + Python 3.8+**. You can either run it locally or with Docker.
+
+---
+
+### 🐍 Option 1: Run Locally (Python)
+
+#### ✅ Requirements
+- Python 3.8 or higher
+- pip
+
+#### ▶️ Steps
 
 ```bash
-# 1. Install dependencies
+# 1. Clone the repository
+git clone https://github.com/marthosPO/marthos-open-mvp.git
+cd marthos-open-mvp
+
+# 2. Install Python dependencies
 pip install -r requirements.txt
 
-# 2. Run the backend server
+# 3. Start the FastAPI server
 uvicorn app.main:app --reload
+앱은 다음에서 사용할 수 있습니다 :
+http://localhost:8000
 
-🐳 Run with Docker
+🐳 옵션 2: Docker로 실행
+▶️ 단계
 bash
-# 1. Build image
+복사
+편집
+# 1. Clone the repository
+git clone https://github.com/marthosPO/marthos-open-mvp.git
+cd marthos-open-mvp
+
+# 2. Build Docker image
 docker build -t marthos-open-mvp .
 
-# 2. Run container
+# 3. Run the container
 docker run -d -p 8000:8000 marthos-open-mvp
-Open http://localhost:8000 to test!
+그런 다음 다음을 통해 서비스에 액세스하십시오 http://localhost:8000
+
+📌 선택 사항: Docker Compose
+Docker Compose를 사용하려면 (예 : 프론트 엔드 / 데이터베이스 추가)
+물어보십시오! 예를 들어 작업하고 있습니다. 😄docker-compose.yml
 
 
 
